@@ -1,22 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Special+Elite&display=swap');
+
 :root {
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --main: #FF5A00;
   --secondary: #d10000;
   --light: #f7d374;
   --dark: #2b1600;
+  --heading: 5vh;
+  --body: 2.5vh;
+  --subheading: 3.25vh;
+  --heading-font: "Special Elite", typewriter;
+  --body-font: "Didact Gothic";
 }
 
 body {
   margin: 0;
   background: var(--light);
   color: var(--dark);
+  font-family: var(--body-font);
+  font-size: var(--body);
+  line-height: 1.6;
 }
 
-h1,
+
+h1{
+  font-family: var(--heading-font);
+  font-size: var(--heading);
+  color: var(--main)
+}
 h2 {
+  font-family: var(--heading-font);
+  font-size: var(--subheading);
   color: var(--main);
 }
 
+section {
+  max-width: 40rem;
+  margin:  0 auto;
+  padding: 8vh 6vw;
+}
 button {
   background: var(--main);
 }
