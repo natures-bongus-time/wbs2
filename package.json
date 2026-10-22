@@ -1,11 +1,18 @@
 {
   "name": "my-site",
+  "homepage": "https://natures-bongus-time.github.io/wbs2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+
+
+    "build": "npm run vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -18,6 +25,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.88.0",
-    "vite": "^8.3.4"
+    "vite": "^8.3.4",
+    "gh-pages": "latest"
   }
 }
